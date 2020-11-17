@@ -8,6 +8,6 @@ $('#second').click(() => {
 
 $('#third').click(() => {
     var color = $('input').val();
-    $('button').css('background', `${color}`);
-    $('#third').off('click');
+    $('button').css('background', color);
+    
 });
