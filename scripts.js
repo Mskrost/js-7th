@@ -7,5 +7,7 @@ $('#second').click(() => {
 });
 
 $('#third').click(() => {
-    $('button').css('background', 'yellow');
+    var color = $('input').val();
+    $('button').css('background', `${color}`);
+    $('#third').off('click');
 });
